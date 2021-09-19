@@ -15,15 +15,15 @@ void loop()
  Serial.print(voltage); Serial.println(" volts");
  float temperatureC = (voltage - 0.5) * 100 ;
  Serial.print(temperatureC); Serial.println(" degrees C");
- delay(1000);
+ delay(10000);
   
- if (temperatureC > 10) {
-  	tone(7, 300);
-  	delay(300);
+ if (temperatureC > 6) {
+  	tone(7, 250);
+  	delay(200);
   	noTone(7);
   
-  	tone(8, 350);
-  	delay(300);
+  	tone(8, 300);
+  	delay(200);
   	noTone(8);
   }
 }
