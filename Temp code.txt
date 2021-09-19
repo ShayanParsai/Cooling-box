@@ -15,9 +15,9 @@ void loop()
  Serial.print(voltage); Serial.println(" volts");
  float temperatureC = (voltage - 0.5) * 100 ;
  Serial.print(temperatureC); Serial.println(" degrees C");
- delay(10000);
+ delay(60000);
   
- if (temperatureC > 6) {
+ if (temperatureC > 9) {
   	tone(7, 250);
   	delay(200);
   	noTone(7);
